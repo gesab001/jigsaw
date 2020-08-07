@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+<script src="jquery.js"></script> 
+<script type="text/javascript" src="jquery.jqpuzzle.js"></script> 
+<link rel="stylesheet" type="text/css" href="jquery.jqpuzzle.css" />
+</head>
+
+<body>
+Paste image url: <input type="text" id="inputimage"><button onclick="play()">play</button><br>
+
+<img id="imagepuzzle" src=""  class="jqPuzzle" />
+
+</body>
+
+<script>
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const imgurl = urlParams.get('imageurl');
+var puzzleEl = document.getElementById("imagepuzzle");
+var inputEl = document.getElementById("inputimage");
+if (imgurl!=null){
+   start(imgurl);
+}
+
+
+function start(imgurl){
+  puzzleEl.src = imgurl;
+}
+
+function play(){
+  var imgurl = inputEl.value;
+  alert(imgurl);
+}
+</script>
+</html>
