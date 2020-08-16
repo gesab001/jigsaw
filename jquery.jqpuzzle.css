@@ -20,6 +20,8 @@
 	border: 1px solid #222222;
 	background-color: #DDDDFF;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
+   
+
 }
 
 /* only needed if external css rules set defaults for divs,
@@ -43,6 +45,8 @@
 	border: 1px solid #FFFFFF;
 	color: #FFFFFF;
 	font-size: 36px;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    font-weight: bold;
 }
 
 .jqPuzzle .jqp-piece:hover {
